@@ -1,7 +1,7 @@
 import React from 'react'
 import {  ExpandMore, Favorite, FavoriteBorder, MoreVert, Share } from '@mui/icons-material';
 import { Avatar , Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Typography } from '@mui/material'
-const Post = () => {
+const Post = ({image}) => {
   return (
     <Card sx={{margin:5}}>
     <CardHeader
@@ -21,7 +21,7 @@ const Post = () => {
     <CardMedia
       component="img"
       height="194"
-      image="/static/images/cards/paella.jpg"
+      image={image}
       alt="Paella dish"
     />
     <CardContent>
